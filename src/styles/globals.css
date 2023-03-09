@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TO DO need better way to do this */
+svg {
+  @apply m-auto;
+}
+
+ol li {
+  @apply ml-5 mt-3;
+}
+
+/* Margin between lists */
+ol:first-child {
+  @apply mt-0;
+}
+
+ol:last-child {
+  @apply mb-10;
+}
+
+ol > ol {
+    @apply my-0 ml-5
+}
+
+/* Fix nested list format */
+ol {
+  counter-reset: item;
+}
+
+ol > li {
+  counter-increment: item;
+}
+
+ol > li::before {
+  content: counters(item, ".") ". ";
+  @apply font-bold;
+}
