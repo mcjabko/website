@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import styles from "./Acordation.module.css";
 import { Plus, Minus } from "phosphor-react";
-import { CSSTransition } from "react-transition-group";
+import { Transition } from "@headlessui/react";
 
 // @ts-ignore
 export const Acordation = ({ title, text }) => {
-  const [open, setOpen] = useState(false);
+  const [IsOpen, setIsOpen] = useState(false);
   const HandleClick = () => {
-    setOpen(!open);
+    setIsOpen(!IsOpen);
   };
   return (
     <div
@@ -18,9 +18,9 @@ export const Acordation = ({ title, text }) => {
       onKeyDown={HandleClick}
     >
       <div className={styles.acordation}>
-        {title}
+        <h4 className="font-black text-xl">{title}</h4>
         <button className={styles.button}>
-          {!open ? (
+          {!IsOpen ? (
             <Plus size={32} color="#f66151" weight="bold" />
           ) : (
             <Minus size={32} color="#f66151" weight="bold" />
@@ -28,15 +28,17 @@ export const Acordation = ({ title, text }) => {
         </button>
       </div>
 
-      <CSSTransition
-        in={open}
-        timeout={300}
-        mountOnEnter
-        unmountOnExit
-        classNames="pop"
+      <Transition
+        show={IsOpen}
+        enter="transition-opacity duration-75"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-150"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
       >
-        <div>{text}</div>
-      </CSSTransition>
+        <p>{text}</p>
+      </Transition>
     </div>
   );
 };

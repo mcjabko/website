@@ -15,7 +15,7 @@ import {
 } from "phosphor-react";
 
 
-export const Navbar = () => {
+export const MainNavbar = () => {
   return (
     <nav className={styles.main_nav}>
       <div className="flex-1">

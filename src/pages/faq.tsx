@@ -1,24 +1,26 @@
 import { Acordation } from "@/components/Acordation";
 import { PageLayout } from "@/Layouts/PageLayout";
+import { NextPage } from "next";
 import React from "react";
 
-const FaqPage = () => {
+const FaqPage: NextPage = () => {
   return (
     <PageLayout
       title="FAQ"
       description="Nevíš si s něčím rady? Tak tady možná najdeš odpověď, pokud ne, tak se nás neboj kontaktovat!"
     >
-      {faqs && faqs.map((item, id) => {
-        const {question, answer} = item
-        return (
-          <Acordation title={question} text={answer} />
-        )
-      })}
+      <div className="p-10 shadow-lg">
+        {faqs &&
+          faqs.map((item, id) => {
+            const { question, answer } = item;
+            return <Acordation key={id} title={question} text={answer} />;
+          })}
+      </div>
     </PageLayout>
   );
 };
 
-export const faqs = [
+const faqs = [
   {
     question: "Proč na serveru nemáte rezidence?",
     answer:
@@ -69,6 +71,6 @@ export const faqs = [
     answer:
       "Ne, na našem serveru není veřejně přístupná dynmapa (a v budoucnu jí neplánujeme).",
   },
-]
+];
 
 export default FaqPage;
