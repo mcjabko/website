@@ -16,8 +16,6 @@
     "@trpc/react-query": "^10.9.0",
     "@trpc/server": "^10.9.0",
     "headlessui": "^0.0.0",
-    "minecraft-server-util": "^5.4.0",
-    "minestat": "^1.0.5",
     "next": "^13.2.1",
     "next-auth": "^4.19.0",
     "phosphor-react": "^1.4.1",

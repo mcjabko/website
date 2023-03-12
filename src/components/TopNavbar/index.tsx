@@ -1,5 +1,5 @@
-import { api } from "@/utils/api";
 import React from "react";
+import { OnlinePlayers } from "@/components/OnlinePlayers";
 
 export const TopNavbar = () => {
   return (
@@ -16,13 +16,4 @@ export const TopNavbar = () => {
   );
 };
 
-const OnlinePlayers = ({ ip, port }: { ip: string; port: number }) => {
-  const { data: onlinePlayer, refetch } = api.onlinePlayers.get.useQuery({
-    ip,
-    port,
-  });
-  setInterval(() => {
-    refetch();
-  }, 50000);
-  return <>{onlinePlayer}</>;
-};
+
