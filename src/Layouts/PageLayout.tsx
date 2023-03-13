@@ -15,13 +15,13 @@ export const PageLayout = ({
   return (
     <>
       <Seo title={title} description={description} />
-      <Header/>
+      <Header />
       <div className="py-10 text-center">
         <h1 className="text-4xl font-extrabold">{title}</h1>
         <h2>{description}</h2>
       </div>
-      <main className="p-5 my-5 lg:w-4/5 lg:mx-auto">{children}</main>
-      <Footer/>
+      <main className="p-3 my-5 lg:mx-auto lg:w-4/5 lg:p-5">{children}</main>
+      <Footer />
     </>
   );
 };

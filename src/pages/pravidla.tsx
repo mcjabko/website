@@ -8,7 +8,7 @@ const RulesPage: NextPage = () => {
       title="Pravidla"
       description="Pravidla jsou velice důležitá pro klidné hraní. Pokud je však porušíš trest tě nemine."
     >
-      <div className="p-10 shadow-lg">
+      <div className="lg:p-10 lg:shadow-lg">
         <p className="my-3 text-center">
           Jelikož chceme na našem serveru udržovat férovou a příjemnou hru všem
           hráčům, je důležité dodržovat závazná pravidla!

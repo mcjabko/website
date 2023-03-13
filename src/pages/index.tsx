@@ -12,7 +12,7 @@ interface Feature {
 const Home: NextPage = () => {
   return (
     <DefaultLayout title="Domů" description="Vše co potřebuješ vědět o serveru">
-      <div className="h-screen bg-slate-800 bg-[url('https://cdn.discordapp.com/attachments/529330434182742026/1084545318101729311/2023-03-12_19.35.02.png')] bg-cover p-10 bg-blend-soft-light">
+      <div className="min-h-screen bg-slate-800 bg-[url('/hero.webp')] bg-cover bg-blend-soft-light lg:p-10">
         <Hero />
         <FeatureList features={features} />
       </div>
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
 
 export const FeatureList = ({ features }: { features: Feature[] }) => {
   return (
-    <div className="flex content-center items-center justify-center p-10">
+    <div className="flex flex-wrap lg:flex-nowrap content-center items-center justify-center p-10">
       {features.map((feature) => {
         return <Feature {...feature} />;
       })}
@@ -33,9 +33,9 @@ export const FeatureList = ({ features }: { features: Feature[] }) => {
 export const Feature = ({ title, description, icon }: Feature) => {
   return (
     <div className="bg-slate-700 bg-opacity-40 p-5 text-white">
-      <h2 className="text-center text-4xl">{icon}</h2>
-      <h3 className="mb-3 text-center text-3xl font-black">{title}</h3>
-      <p className="text-xl">{description}</p>
+      <h2 className="text-center text-3xl lg:text-4xl">{icon}</h2>
+      <h3 className="mb-3 text-center text-2xl lg:text-3xl font-black">{title}</h3>
+      <p className="lg:text-xl">{description}</p>
     </div>
   );
 };
