@@ -4,8 +4,11 @@ const config = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--poppins-font)"],
+      },
       backgroundIímage: {
-        "hero-image": "url('/hero.webp')",
+        heroimage: "url('/hero.webp')",
       },
     },
   },

@@ -22,7 +22,7 @@ const Home: NextPage = () => {
 
 export const FeatureList = ({ features }: { features: Feature[] }) => {
   return (
-    <div className="flex flex-wrap lg:flex-nowrap content-center items-center justify-center p-10">
+    <div className="flex flex-wrap content-center items-center justify-center p-10 lg:flex-nowrap">
       {features.map((feature) => {
         return <Feature {...feature} />;
       })}
@@ -32,9 +32,11 @@ export const FeatureList = ({ features }: { features: Feature[] }) => {
 
 export const Feature = ({ title, description, icon }: Feature) => {
   return (
-    <div className="bg-slate-700 bg-opacity-40 p-5 text-white">
+    <div className="bg-slate-700 bg-opacity-40 p-5 text-white lg:mx-3">
       <h2 className="text-center text-3xl lg:text-4xl">{icon}</h2>
-      <h3 className="mb-3 text-center text-2xl lg:text-3xl font-black">{title}</h3>
+      <h3 className="mb-3 text-center text-2xl font-black lg:text-3xl">
+        {title}
+      </h3>
       <p className="lg:text-xl">{description}</p>
     </div>
   );
