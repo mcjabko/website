@@ -1,5 +1,4 @@
 import { type NextPage } from "next";
-import { signIn, signOut, useSession } from "next-auth/react";
 import { DefaultLayout } from "@/layouts/DefaultLayout";
 import { Hero } from "@/components/Hero";
 
@@ -23,8 +22,8 @@ const Home: NextPage = () => {
 export const FeatureList = ({ features }: { features: Feature[] }) => {
   return (
     <div className="flex flex-wrap content-center items-center justify-center p-10 lg:flex-nowrap">
-      {features.map((feature) => {
-        return <Feature {...feature} />;
+      {features.map((feature, id) => {
+        return <Feature key={id} {...feature} />;
       })}
     </div>
   );

@@ -1,6 +1,6 @@
 import { Acordation } from "@/components/Acordation";
 import { PageLayout } from "@/layouts/PageLayout";
-import { NextPage } from "next";
+import { type NextPage } from "next";
 import React from "react";
 
 const FaqPage: NextPage = () => {

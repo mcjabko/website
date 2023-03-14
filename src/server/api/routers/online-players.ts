@@ -1,5 +1,8 @@
 import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "@/server/api/trpc";
+import type { ServerStatus } from "@/server/api/interfaces/ServerStatus";
+
+
 
 export const OnlinePlayerRouter = createTRPCRouter({
   get: publicProcedure
@@ -9,7 +12,7 @@ export const OnlinePlayerRouter = createTRPCRouter({
         `https://mcapi.us/server/status?ip=${input.ip}&port=${input.port}`
       );
       if (fetchOnlinePlayers.ok) {
-        const onlinePlayers = await fetchOnlinePlayers.json();
+        const onlinePlayers = await fetchOnlinePlayers.json() as ServerStatus;
         return onlinePlayers.players.now || 0;
       }
     }),

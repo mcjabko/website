@@ -1,5 +1,5 @@
 import { PageLayout } from "@/layouts/PageLayout";
-import { NextPage } from "next";
+import { type NextPage } from "next";
 import React from "react";
 
 const RulesPage: NextPage = () => {
@@ -15,7 +15,7 @@ const RulesPage: NextPage = () => {
         </p>
         <h3 className="font-bold">
           A. Obecná pravidla platící na všech světech MCJabko.cz, dále jen
-          "server".
+          &ldquo;server&rdquo;.
         </h3>
         <ol>
           <li>

@@ -1,17 +1,15 @@
-import React, { ReactNode } from "react";
+import React, { type ReactNode } from "react";
 import { Seo } from "@/components/Seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-export const PageLayout = ({
-  title,
-  description,
-  children,
-}: {
+interface PageLayout {
   title: string;
   description: string;
   children: ReactNode;
-}) => {
+}
+
+export const PageLayout = ({ title, description, children }: PageLayout) => {
   return (
     <>
       <Seo title={title} description={description} />
@@ -20,7 +18,7 @@ export const PageLayout = ({
         <h1 className="text-4xl font-extrabold">{title}</h1>
         <h2>{description}</h2>
       </div>
-      <main className="p-3 my-5 lg:mx-auto lg:w-4/5 lg:p-5">{children}</main>
+      <main className="my-5 p-3 lg:mx-auto lg:w-4/5 lg:p-5">{children}</main>
       <Footer />
     </>
   );

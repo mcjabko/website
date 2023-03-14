@@ -19,7 +19,7 @@ export const Seo = ({title, description}: {title: string, description: string}) 
       <meta property="og:url" content="https://mcjabko.cz" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="MCJabko.cz" />
-      <meta property="og:image" content="https://mcjabko.cz/android-chrome-512x512.png" />
+      <meta property="og:image" content="/android-chrome-512x512.png" />
       <meta property="og:image:alt" content="Logo serveru MCJabko" />
       <meta property="og:description" content="MCJabko je síť Semi-Vanilla a Vanilla serverů již od roku 2017."/>
       <meta property="og:site_name" content="MCJabko.cz" />
@@ -34,13 +34,13 @@ export const Seo = ({title, description}: {title: string, description: string}) 
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="favicon-32x32.png"
+        href="/favicon-32x32.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="favicon-16x16.png"
+        href="/favicon-16x16.png"
       />
       <link rel="manifest" href="site.webmanifest" />
     </Head>

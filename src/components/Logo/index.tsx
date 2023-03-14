@@ -1,5 +1,6 @@
 import React from "react";
+import Image from "next/image";
 
-export const Logo = ({width="64", height="64"}: {width: string, height: string}) => {
-  return <img src="https://mcjabko-images.s3.eu-central-1.amazonaws.com/logo.png" alt="Logo" width={width} height={height} />;
+export const Logo = ({width=64, height=64}: {width: number, height: number}) => {
+  return <Image src="/logo.png" alt="Logo" width={width} height={height} />;
 };
