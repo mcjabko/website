@@ -1,5 +1,5 @@
-import { PageLayout } from "@/Layouts/PageLayout";
-import { NextPage } from "next";
+import { PageLayout } from "@/layouts/PageLayout";
+import  { type NextPage } from "next";
 import React from "react";
 
 const AboutPage: NextPage = () => {

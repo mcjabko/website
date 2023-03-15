@@ -1,6 +1,6 @@
 import { Acordation } from "@/components/Acordation";
-import { PageLayout } from "@/Layouts/PageLayout";
-import { NextPage } from "next";
+import { PageLayout } from "@/layouts/PageLayout";
+import { type NextPage } from "next";
 import React from "react";
 
 const FaqPage: NextPage = () => {
@@ -9,7 +9,7 @@ const FaqPage: NextPage = () => {
       title="FAQ"
       description="Nevíš si s něčím rady? Tak tady možná najdeš odpověď, pokud ne, tak se nás neboj kontaktovat!"
     >
-      <div className="p-10 shadow-lg">
+      <div className="shadow-lg lg:p-10">
         {faqs &&
           faqs.map((item, id) => {
             const { question, answer } = item;

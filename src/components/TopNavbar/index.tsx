@@ -1,9 +1,9 @@
-import { api } from "@/utils/api";
 import React from "react";
+import { OnlinePlayers } from "@/components/OnlinePlayers";
 
 export const TopNavbar = () => {
   return (
-    <nav className="flex bg-black p-5 text-white">
+    <nav className="hidden bg-black p-5 text-white lg:flex">
       <div className="flex-1 text-center">
         <p className="font-bold">
           Počet hráčů online: <OnlinePlayers ip="mc.mcjabko.cz" port={25565} />{" "}
@@ -14,15 +14,4 @@ export const TopNavbar = () => {
       </div>
     </nav>
   );
-};
-
-const OnlinePlayers = ({ ip, port }: { ip: string; port: number }) => {
-  const { data: onlinePlayer, refetch } = api.onlinePlayers.get.useQuery({
-    ip,
-    port,
-  });
-  setInterval(() => {
-    refetch();
-  }, 50000);
-  return <>{onlinePlayer}</>;
 };

@@ -18,7 +18,7 @@ export const Acordation = ({ title, text }) => {
       onKeyDown={HandleClick}
     >
       <div className={styles.acordation}>
-        <h4 className="font-black text-xl">{title}</h4>
+        <h4 className="font-bold text-xl">{title}</h4>
         <button className={styles.button}>
           {!IsOpen ? (
             <Plus size={32} color="#f66151" weight="bold" />

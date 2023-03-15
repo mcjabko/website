@@ -23,6 +23,9 @@ const config = {
 
   eslint: {
     ignoreDuringBuilds: true
+  },
+  images: {
+    domains: ["cdn.mcjabko.cz", "mcjabko.cz"]
   }
 };
 export default config;

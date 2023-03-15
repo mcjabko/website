@@ -1,21 +1,21 @@
-import { PageLayout } from "@/Layouts/PageLayout";
-import { NextPage } from "next";
+import { PageLayout } from "@/layouts/PageLayout";
+import { type NextPage } from "next";
 import React from "react";
 
 const RulesPage: NextPage = () => {
   return (
     <PageLayout
       title="Pravidla"
-      description="Pravidla jsou velice důležitá pro klidně hraní. Pokud je však porušíš trest tě nemine."
+      description="Pravidla jsou velice důležitá pro klidné hraní. Pokud je však porušíš trest tě nemine."
     >
-      <div className="p-10 shadow-lg">
+      <div className="lg:p-10 lg:shadow-lg">
         <p className="my-3 text-center">
           Jelikož chceme na našem serveru udržovat férovou a příjemnou hru všem
           hráčům, je důležité dodržovat závazná pravidla!
         </p>
         <h3 className="font-bold">
           A. Obecná pravidla platící na všech světech MCJabko.cz, dále jen
-          "server".
+          &ldquo;server&rdquo;.
         </h3>
         <ol>
           <li>
@@ -62,9 +62,8 @@ const RulesPage: NextPage = () => {
           </li>
           <li>Je zakázáno jakkoliv obcházet ban!</li>
           <li>
-            Jakýkoliv pokyn člena Admin teamu (Majitel, Spolumajitel, Hlavní
-            admin, Admin, Support či Zkušební support), musí být bezodkladně
-            uposlechnut!
+            Jakýkoliv pokyn člena Admin teamu (Majitel, Vedení, Hlavní Support,
+            Support či Zkušební Support), musí být bezodkladně uposlechnut!
             <ol>
               <li>
                 Admin team má právo, jakkoliv potrestat či omezit jakéhokoliv
@@ -84,7 +83,7 @@ const RulesPage: NextPage = () => {
             </ol>
           </li>
           <li>
-            Je zakázáno jakýmikoliv způsobem podvádět/získávat výhody nad
+            Je zakázáno jakýmkoliv způsobem podvádět/získávat výhody nad
             ostatními hráči.
             <ol>
               <li>

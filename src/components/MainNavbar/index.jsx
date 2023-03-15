@@ -19,7 +19,7 @@ export const MainNavbar = () => {
   return (
     <nav className={styles.main_nav}>
       <div className="flex-1">
-       <Logo width="48" height="48" />
+       <Logo width={48} height={48} />
       </div>
       <div className="flex-1">
         <div className={styles.links}>

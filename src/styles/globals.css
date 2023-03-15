@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* TO DO need better way to do this */
 svg {
   @apply m-auto;
