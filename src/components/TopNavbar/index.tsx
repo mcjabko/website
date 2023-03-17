@@ -1,5 +1,6 @@
 import React from "react";
 import { OnlinePlayers } from "@/components/OnlinePlayers";
+import { CopyButton } from "@/components/CopyButton";
 
 export const TopNavbar = () => {
   return (
@@ -10,7 +11,7 @@ export const TopNavbar = () => {
         </p>
       </div>
       <div className="flex-1 text-center">
-        <p className="font-bold">IP: mc.mcjabko.cz</p>
+        <p className="font-bold">IP: <CopyButton>mc.mcjabko.cz</CopyButton></p>
       </div>
     </nav>
   );
