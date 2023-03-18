@@ -58,7 +58,7 @@ const features: Feature[] = [
     icon: "🖥️",
     title: "Zázemí",
     description:
-      "Všechny naše herní servey jsou provozováný na naších vlastních serverech v ČR.",
+      "Všechny naše herní servery jsou provozováný na naších vlastních serverech v ČR.",
   },
 ];
 
