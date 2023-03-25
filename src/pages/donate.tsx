@@ -9,7 +9,7 @@ const DonatePage: NextPage = () => {
       title="Sponzor"
       description="Podpoř nás v tom co děláme a získej nějaké ty výhody."
     >
-      <div className="shadow-lg p-3 lg:m-auto lg:w-6/12 lg:p-10">
+      <div className="p-3 shadow-lg lg:m-auto lg:w-6/12 lg:p-10">
         <div className="my-5">
           <h3 className="text-center text-2xl font-bold">Výhody</h3>
           <ul>
@@ -21,7 +21,11 @@ const DonatePage: NextPage = () => {
               );
             })}
           </ul>
+          <p className="my-10 text-center font-semibold">
+            Cena je 50Kč na měsíc nebo 99Kč na 3 měsíce
+          </p>
         </div>
+
         <div className="my-3">
           <h3 className="text-center text-2xl font-bold">
             Jak sponzora zakoupit?
