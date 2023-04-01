@@ -8,25 +8,6 @@ svg {
   @apply m-auto;
 }
 
-ol li {
-  @apply ml-5 mt-3;
-}
-
-/* Margin between lists */
-ol:first-child {
-  @apply mt-0;
-}
-
-ol > ol {
-    @apply my-0 ml-5;
-}
-
-/* nested list format */
-ol {
-  counter-reset: item;
-}
-ol > li::before {
+ li::marker {
   @apply font-bold;
-  content: counters(item, ".") ". ";
-  counter-increment: item;
 }
