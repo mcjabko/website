@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     question: "Můžu nějak podpořit server?",
-    answer: "Můžu nějak podpořit server?",
+    answer: "Server můžeš podpořit zakoupnením ranku sponzor. Více se dozvíš zde https://mcjabko.cz/donate",
   },
   {
     question: "Kdy bude nábor do admin teamu?",

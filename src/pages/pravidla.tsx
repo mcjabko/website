@@ -19,7 +19,7 @@ const RulesPage: NextPage = () => {
             infrastruktury serveru.
           </li>
           <li>
-            Griefing, to znamená, ničení, stavba a jiné narušování staveb cizích
+            Griefing, to znamená, ničení, staveb a jiné narušování staveb cizích
             hráčů bez povolení je přísně zakázán!
           </li>
           <li>

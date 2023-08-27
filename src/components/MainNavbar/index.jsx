@@ -12,6 +12,7 @@ import {
   Lightbulb,
   IdentificationBadge,
   List,
+  ThumbsUp,
 } from "phosphor-react";
 
 
@@ -19,7 +20,7 @@ export const MainNavbar = () => {
   return (
     <nav className={styles.main_nav}>
       <div className="flex-1">
-       <Logo width={48} height={48} />
+        <Logo width={48} height={48} />
       </div>
       <div className="flex-1">
         <div className={styles.links}>
@@ -112,9 +113,18 @@ export const routes = [
   },
   {
     icon: (
+      <ThumbsUp
+        size={"1.5em"}
+        color="#f66151"
+        weight="duotone" />
+    ),
+    name: "Hlasování",
+    url: "https://hlasuj.mcjabko.cz"
+  },
+  {
+    icon: (
       <Lightbulb
         size={"1.5em"}
-        style={{ verticalAlign: "middle" }}
         color="#f66151"
         weight="duotone"
       />

@@ -54,13 +54,9 @@ const DonatePage: NextPage = () => {
 };
 
 const benefits: string[] = [
-  "/pos - Blok který právě držíš v ruce na tvoji hlavu.",
-  "/sethome - Možnost si nastavit home. (5x)",
-  "/sit - Můžeš si kdekoliv sednout.",
-  "/glow - Nikde se nestratíš",
-  "/suffixy - Vyber si ten který se ti nejvíce libí",
+  "Možnost si nastavit až 5x",
   "Rezervovaný slot",
-  "Možnost psát barevně (chat, cedulky, knížky)",
+  "Možnost psát barevně",
   "Zlatý prefix v chatu a tabu.",
   "Náš neskonalý vděk",
 ];
