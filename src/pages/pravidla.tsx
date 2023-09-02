@@ -68,7 +68,7 @@ const RulesPage: NextPage = () => {
           </li>
           <li>
             Server neručí za ztracené věci vlivem teleportace na jiného hráče,
-            chybou hráče, lagem hry na straně hráře či výpadkem připojení daného
+            chybou hráče, lagem hry na straně hráče či výpadkem připojení daného
             hráče.
           </li>
           <li>Každý hráč má povinnost nahlásit hráče porušujícího pravidla!</li>
