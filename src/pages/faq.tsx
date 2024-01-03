@@ -71,6 +71,10 @@ const faqs = [
     answer:
       "Ne, na našem serveru není veřejně přístupná dynmapa (a v budoucnu jí neplánujeme).",
   },
+  {
+    question: "Proč se musím registrovat přes discord?",
+    answer: "Systém registrace na discordu slouží jako prevence proti nežádoucím hráčům ( např. grieferům) a botům, protože na MCjabk nejsou žádné rezidence a máme spawn shopy. Zároveň tím zajistíme, že každý hráč bude mít přístup k podpoře přes discord."
+  }
 ];
 
 export default FaqPage;
