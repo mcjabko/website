@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --accent: 248, 113, 113;
+  --accent-light: 252, 165, 165;
+  --accent-dark: 185, 28, 28;
+}
+html {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #111827;
+  scroll-behavior: smooth;
+}
 
 /* TO DO need better way to do this */
 svg {
