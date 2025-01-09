@@ -1,9 +1,7 @@
 import { type AppType } from "next/app";
 import { type Session } from "next-auth";
-import { SessionProvider } from "next-auth/react";
 import { Poppins } from "next/font/google";
-import { api } from "@/utils/api";
-
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "@/styles/globals.css";
 
 const poppins = Poppins({
@@ -14,17 +12,20 @@ const poppins = Poppins({
   display: "swap",
 });
 
-const MyApp: AppType<{ session: Session | null }> = ({
+
+const App: AppType<{ session: Session | null }> = ({
   Component,
-  pageProps: { session, ...pageProps },
+  pageProps: { ...pageProps },
 }) => {
+  const queryClient = new QueryClient()
+
   return (
-    <SessionProvider session={session}>
-      <main  className={`${poppins.variable} font-sans`}>
+    <QueryClientProvider client={queryClient}>
+      <main className={`${poppins.variable} font-sans`}>
         <Component {...pageProps} />
       </main>
-    </SessionProvider>
+    </QueryClientProvider>
   );
 };
 
-export default api.withTRPC(MyApp);
+export default App;
