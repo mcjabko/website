@@ -8,8 +8,6 @@ const server = z.object({
   NODE_ENV: z.enum(["development", "test", "production"]),
   SERVER_IP: z.string(),
   SERVER_PORT: z.string(),
-  NEXTAUTH_SECRET: z.string(),
-  NEXTAUTH_URL: z.string()
   // Add `.min(1) on ID and SECRET if you want to make sure they're not empty
 });
 
@@ -29,8 +27,6 @@ const client = z.object({
  */
 const processEnv = {
   NODE_ENV: process.env.NODE_ENV,
-  NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
-  NEXTAUTH_URL: process.env.NEXTAUTH_URL,
   SERVER_IP: process.env.SERVER_IP,
   SERVER_PORT: process.env.SERVER_PORT
   // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
@@ -64,20 +60,7 @@ if (!!process.env.SKIP_ENV_VALIDATION == false) {
     throw new Error("Invalid environment variables");
   }
 
-  env = new Proxy(parsed.data, {
-    get(target, prop) {
-      if (typeof prop !== "string") return undefined;
-      // Throw a descriptive error if a server-side env var is accessed on the client
-      // Otherwise it would just be returning `undefined` and be annoying to debug
-      if (!isServer && !prop.startsWith("NEXT_PUBLIC_"))
-        throw new Error(
-          process.env.NODE_ENV === "production"
-            ? "❌ Attempted to access a server-side environment variable on the client"
-            : `❌ Attempted to access server-side environment variable '${prop}' on the client`
-        );
-      return target[/** @type {keyof typeof target} */ (prop)];
-    },
-  });
+  env = parsed.data;
 }
 
 export { env };

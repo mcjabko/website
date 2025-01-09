@@ -9,7 +9,7 @@ interface PageLayout {
   children: ReactNode;
 }
 
-export const PageLayout = ({ title, description, children }: PageLayout) => {
+const PageLayout = ({ title, description, children }: PageLayout) => {
   return (
     <>
       <Seo title={title} description={description} />
@@ -23,3 +23,5 @@ export const PageLayout = ({ title, description, children }: PageLayout) => {
     </>
   );
 };
+
+export default PageLayout;

@@ -1,5 +1,5 @@
 import { type NextPage } from "next";
-import { DefaultLayout } from "@/layouts/DefaultLayout";
+import DefaultLayout from "@/layouts/DefaultLayout";
 import { Hero } from "@/components/Hero";
 import { DiscordBanner } from "@/components/DiscordBanner";
 import { FeatureList } from "@/components/Features";

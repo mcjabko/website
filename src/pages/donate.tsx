@@ -1,4 +1,4 @@
-import { PageLayout } from "@/layouts/PageLayout";
+import PageLayout from "@/layouts/PageLayout";
 import { type NextPage } from "next";
 import Link from "next/link";
 import React from "react";

@@ -1,8 +1,9 @@
 
+import { type ServerStatus } from "@/types/serverStatus";
 import { useQuery } from "@tanstack/react-query";
 
 export const OnlinePlayers = ({ ip, port }: { ip: string; port: number }) => {
-  const { data: onlinePlayer, isLoading, error } = useQuery({
+  const { data: onlinePlayer, isLoading, error } = useQuery<ServerStatus>({
     queryKey: ["onlinePlayers"],
     queryFn: () => fetch(`https://api.mcstatus.io/v2/status/java/${ip}:${port}`).then((res) => res.json()),
   });
