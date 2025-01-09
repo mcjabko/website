@@ -2,7 +2,7 @@ import React from "react";
 import { OnlinePlayers } from "@/components/OnlinePlayers";
 import { CopyButton } from "@/components/CopyButton";
 
-export const TopNavbar = () => {
+const TopNavbar = () => {
   return (
     <nav className="hidden bg-black p-5 text-white lg:flex">
       <div className="flex-1 text-center">
@@ -16,3 +16,5 @@ export const TopNavbar = () => {
     </nav>
   );
 };
+
+export default TopNavbar;

@@ -3,6 +3,7 @@ import js from '@eslint/js'
 import { FlatCompat } from '@eslint/eslintrc'
 
 const compat = new FlatCompat({
+  ignores: ['**/node_modules/**', '.next/**'],
   baseDirectory: import.meta.dirname,
   recommendedConfig: js.configs.recommended,
 })

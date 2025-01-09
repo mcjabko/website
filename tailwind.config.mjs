@@ -9,13 +9,10 @@ const config = {
       },
       fontFamily: {
         sans: ["var(--poppins-font)"],
-      },
-      backgroundIímage: {
-        heroimage: "url('/hero.webp')",
-      },
+      }
     },
   },
   plugins: [],
 };
 
-module.exports = config;
+export default config;
