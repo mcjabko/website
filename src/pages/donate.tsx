@@ -54,7 +54,7 @@ const DonatePage: NextPage = () => {
 };
 
 const benefits: string[] = [
-  "Možnost si nastavit až 5x",
+  "Možnost si nastavit až 4x home",
   "Rezervovaný slot",
   "Možnost psát barevně",
   "Zlatý prefix v chatu a tabu.",
