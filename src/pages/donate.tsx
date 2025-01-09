@@ -22,7 +22,7 @@ const DonatePage: NextPage = () => {
             })}
           </ul>
           <p className="my-10 text-center font-semibold">
-            Cena je 50Kč na měsíc nebo 99Kč na 3 měsíce
+            Cena je 75Kč na měsíc nebo 150Kč na 3 měsíce
           </p>
         </div>
 
