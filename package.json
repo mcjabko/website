@@ -11,10 +11,6 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@tanstack/react-query": "^5.63.0",
-    "@trpc/client": "^10.45.2",
-    "@trpc/next": "^10.45.2",
-    "@trpc/react-query": "^10.45.2",
-    "@trpc/server": "^10.45.2",
     "next": "^15.1.4",
     "next-auth": "^4.24.11",
     "phosphor-react": "^1.4.1",
