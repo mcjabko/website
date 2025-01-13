@@ -8,8 +8,6 @@ const server = z.object({
   NODE_ENV: z.enum(["development", "test", "production"]),
   SERVER_IP: z.string(),
   SERVER_PORT: z.string(),
-  NEXTAUTH_SECRET: z.string(),
-  NEXTAUTH_URL: z.string()
   // Add `.min(1) on ID and SECRET if you want to make sure they're not empty
 });
 
@@ -29,8 +27,6 @@ const client = z.object({
  */
 const processEnv = {
   NODE_ENV: process.env.NODE_ENV,
-  NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
-  NEXTAUTH_URL: process.env.NEXTAUTH_URL,
   SERVER_IP: process.env.SERVER_IP,
   SERVER_PORT: process.env.SERVER_PORT
   // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,

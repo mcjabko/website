@@ -3,8 +3,8 @@ import styles from "./Acordation.module.css";
 import { Plus, Minus } from "phosphor-react";
 import { Transition } from "@headlessui/react";
 
-// @ts-ignore
-export const Acordation = ({ title, text }) => {
+// @ts-expect-error JSX element no types
+export const Acordation = ({ title, text }) => { 
   const [IsOpen, setIsOpen] = useState(false);
   const HandleClick = () => {
     setIsOpen(!IsOpen);

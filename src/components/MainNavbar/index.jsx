@@ -16,7 +16,7 @@ import {
 } from "phosphor-react";
 
 
-export const MainNavbar = () => {
+const MainNavbar = () => {
   return (
     <nav className={styles.main_nav}>
       <div className="flex-1">
@@ -145,3 +145,5 @@ export const routes = [
     url: "https://banlist.mcjabko.cz",
   },
 ];
+
+export default MainNavbar;

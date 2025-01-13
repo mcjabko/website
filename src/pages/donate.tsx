@@ -1,4 +1,4 @@
-import { PageLayout } from "@/layouts/PageLayout";
+import PageLayout from "@/layouts/PageLayout";
 import { type NextPage } from "next";
 import Link from "next/link";
 import React from "react";
@@ -22,7 +22,7 @@ const DonatePage: NextPage = () => {
             })}
           </ul>
           <p className="my-10 text-center font-semibold">
-            Cena je 50Kč na měsíc nebo 99Kč na 3 měsíce
+            Cena je 75Kč na měsíc nebo 150Kč na 3 měsíce
           </p>
         </div>
 
@@ -54,7 +54,7 @@ const DonatePage: NextPage = () => {
 };
 
 const benefits: string[] = [
-  "Možnost si nastavit až 5x",
+  "Možnost si nastavit až 4x home",
   "Rezervovaný slot",
   "Možnost psát barevně",
   "Zlatý prefix v chatu a tabu.",

@@ -1,4 +1,4 @@
-import React, { type ReactNode } from "react";
+ import React, { type ReactNode } from "react";
 import { Seo } from "@/components/Seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -9,7 +9,7 @@ interface DefaultLayout {
   children: ReactNode;
 }
 
-export const DefaultLayout = ({
+const DefaultLayout = ({
   title,
   description,
   children,
@@ -23,3 +23,5 @@ export const DefaultLayout = ({
     </>
   );
 };
+
+export default DefaultLayout;

@@ -1,4 +1,5 @@
 .footer {
+    margin-top: 2.5em;
     display: grid;
     grid-template-rows: 1fr 1fr;
     text-align: center;
