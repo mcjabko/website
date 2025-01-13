@@ -11,7 +11,7 @@ const features: Feature[] = [
     icon: "🚔",
     title: "Admin Team",
     description:
-      "Admim Team ti rád pomůže s řešením tvých problémů ať už na serveru nebo na discordu.",
+      "Admin Team ti rád pomůže s řešením tvých problémů ať už na serveru nebo na discordu.",
   },
   {
     icon: "🖥️",
