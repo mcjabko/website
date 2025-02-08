@@ -23,6 +23,9 @@ const RulesPage: NextPage = () => {
             hráčů bez povolení je přísně zakázán!
           </li>
           <li>
+            Hráč může vlastnit nejvýše tři účty. V případě banu může být zablokován nejen jeho hlavní účet, ale i všechny ostatní.
+          </li>
+          <li>
             Je zakázáno, jakkoliv urážet, narážet, zmiňovat, stavět či jinými
             způsoby vyjadřovat, propagovat a podporovat, rasismus, genocidu,
             válečné zločiny a jakékoliv protiprávní jednání v rámci zákonů České
@@ -31,8 +34,7 @@ const RulesPage: NextPage = () => {
           <li> Každý hráč ručí za zabezpečení svého uživatelského účtu!</li>
           <li> Je zakázáno jakkoliv obcházet ban!</li>
           <li>
-            Jakýkoliv pokyn člena Admin teamu (Majitel, Vedení, Hlavní Support,
-            Support či Zkušební Support), musí být bezodkladně uposlechnut!
+            Jakýkoliv pokyn člena Admin teamu (Majitel, Vedení, Adminy, Hlavní Support, Support či Zkušební Support), musí být bezodkladně uposlechnut!
           </li>
           <li>
             Admin team má právo, jakkoliv potrestat či omezit jakéhokoliv
